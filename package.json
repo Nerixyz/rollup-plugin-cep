@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-cep",
   "version": "1.0.0",
-  "description": "",
+  "description": "Add manifest and debug files to Adobe CEP builds",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p ."
@@ -24,7 +24,9 @@
   "peerDependencies": {
     "rollup": "^2.32.1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "adobe", "cep", "extension", "build", "plugin", "rollup"
+  ],
+  "author": "Nerixyz",
   "license": "ISC"
 }

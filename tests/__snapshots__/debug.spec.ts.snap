@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildDebugXml should generate a valid debug config 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<ExtensionList>
+  <Extension Id=\\"de.nerixyz.bundle.extension1\\">
+    <HostList>
+      <Host Name=\\"AEFT\\" Port=\\"1337\\"/>
+    </HostList>
+  </Extension>
+  <Extension Id=\\"de.nerixyz.bundle.extension2\\">
+    <HostList>
+      <Host Name=\\"AEFT\\" Port=\\"1337\\"/>
+    </HostList>
+  </Extension>
+</ExtensionList>"
+`;

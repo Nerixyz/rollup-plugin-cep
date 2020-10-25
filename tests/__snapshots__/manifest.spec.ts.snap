@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildManifestXml should build a full config 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"no\\"?>
+<ExtensionManifest Version=\\"7.0\\" ExtensionBundleId=\\"de.nerixyz.bundle\\" ExtensionBundleVersion=\\"2.0\\" ExtensionBundleName=\\"My Bundle\\">
+  <Author>Nerixyz</Author>
+  <Contact mailto=\\"mail@test.com\\">nerixyz.de</Contact>
+  <Legal href=\\"https://nerixyz.de\\">Legal stuff</Legal>
+  <Abstract href=\\"https://nerixyz.de\\">Abstract</Abstract>
+  <ExtensionList>
+    <Extension Id=\\"de.nerixyz.bundle.extension1\\" Version=\\"3.45\\"/>
+    <Extension Id=\\"de.nerixyz.bundle.extension2\\" Version=\\"3.45\\"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name=\\"AEFT\\" Version=\\"14.0\\"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code=\\"de_DE\\"/>
+      <Locale Code=\\"en_GB\\"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name=\\"CSXS\\" Version=\\"4.0\\"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id=\\"de.nerixyz.bundle.extension1\\">
+      <HostList>
+        <Host Name=\\"4.0\\"/>
+      </HostList>
+      <DispatchInfo Host=\\"dispatch host\\">
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./index.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--enable-nodejs</Parameter>
+            <Parameter>--some-other-parameter</Parameter>
+          </CEFCommandLine>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>false</AutoVisible>
+          <StartOn>
+            <Event>myEvent</Event>
+            <Event>otherEvent</Event>
+          </StartOn>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>My Menu Item</Menu>
+          <Geometry>
+            <ScreenPercentage>
+              <Height>456</Height>
+              <Width>123</Width>
+            </ScreenPercentage>
+            <Size>
+              <Height>8</Height>
+              <Width>8</Width>
+            </Size>
+            <MaxSize>
+              <Height>9</Height>
+              <Width>9</Width>
+            </MaxSize>
+            <MinSize>
+              <Height>7</Height>
+              <Width>7</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+            <Icon Type=\\"DarkNormal\\">./myIcon.webp</Icon>
+            <Icon Type=\\"DarkRollOver\\">./myOtherIcon.avif</Icon>
+            <Icon Type=\\"Disabled\\">./someOtherIcon</Icon>
+            <Icon Type=\\"Normal\\">./something</Icon>
+            <Icon Type=\\"RollOver\\">./icon</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+      <DispatchInfo Host=\\"dispatch host\\">
+        <Resources>
+          <MainPath>./index.html#other-location</MainPath>
+          <ScriptPath>./index.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--enable-nodejs</Parameter>
+            <Parameter>--some-other-parameter</Parameter>
+          </CEFCommandLine>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>false</AutoVisible>
+          <StartOn>
+            <Event>myEvent</Event>
+            <Event>otherEvent</Event>
+          </StartOn>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>My Second Item</Menu>
+          <Geometry>
+            <ScreenPercentage>
+              <Height>456</Height>
+              <Width>123</Width>
+            </ScreenPercentage>
+            <Size>
+              <Height>8</Height>
+              <Width>8</Width>
+            </Size>
+            <MaxSize>
+              <Height>9</Height>
+              <Width>9</Width>
+            </MaxSize>
+            <MinSize>
+              <Height>7</Height>
+              <Width>7</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+            <Icon Type=\\"DarkNormal\\">./myIcon.webp</Icon>
+            <Icon Type=\\"DarkRollOver\\">./myOtherIcon.avif</Icon>
+            <Icon Type=\\"Disabled\\">./someOtherIcon</Icon>
+            <Icon Type=\\"Normal\\">./something</Icon>
+            <Icon Type=\\"RollOver\\">./icon</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+      <DependencyList>
+        <Dependency Id=\\"MyDep\\" Version=\\"3\\"/>
+      </DependencyList>
+    </Extension>
+    <Extension Id=\\"de.nerixyz.bundle.extension2\\">
+      <HostList>
+        <Host Name=\\"4.0\\"/>
+      </HostList>
+      <DispatchInfo Host=\\"dispatch host\\">
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./index.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--enable-nodejs</Parameter>
+            <Parameter>--some-other-parameter</Parameter>
+          </CEFCommandLine>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>false</AutoVisible>
+          <StartOn>
+            <Event>myEvent</Event>
+            <Event>otherEvent</Event>
+          </StartOn>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>My Menu Item</Menu>
+          <Geometry>
+            <ScreenPercentage>
+              <Height>456</Height>
+              <Width>123</Width>
+            </ScreenPercentage>
+            <Size>
+              <Height>8</Height>
+              <Width>8</Width>
+            </Size>
+            <MaxSize>
+              <Height>9</Height>
+              <Width>9</Width>
+            </MaxSize>
+            <MinSize>
+              <Height>7</Height>
+              <Width>7</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+            <Icon Type=\\"DarkNormal\\">./myIcon.webp</Icon>
+            <Icon Type=\\"DarkRollOver\\">./myOtherIcon.avif</Icon>
+            <Icon Type=\\"Disabled\\">./someOtherIcon</Icon>
+            <Icon Type=\\"Normal\\">./something</Icon>
+            <Icon Type=\\"RollOver\\">./icon</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+      <DispatchInfo Host=\\"dispatch host\\">
+        <Resources>
+          <MainPath>./index.html#other-location</MainPath>
+          <ScriptPath>./index.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--enable-nodejs</Parameter>
+            <Parameter>--some-other-parameter</Parameter>
+          </CEFCommandLine>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>false</AutoVisible>
+          <StartOn>
+            <Event>myEvent</Event>
+            <Event>otherEvent</Event>
+          </StartOn>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>My Second Item</Menu>
+          <Geometry>
+            <ScreenPercentage>
+              <Height>456</Height>
+              <Width>123</Width>
+            </ScreenPercentage>
+            <Size>
+              <Height>8</Height>
+              <Width>8</Width>
+            </Size>
+            <MaxSize>
+              <Height>9</Height>
+              <Width>9</Width>
+            </MaxSize>
+            <MinSize>
+              <Height>7</Height>
+              <Width>7</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+            <Icon Type=\\"DarkNormal\\">./myIcon.webp</Icon>
+            <Icon Type=\\"DarkRollOver\\">./myOtherIcon.avif</Icon>
+            <Icon Type=\\"Disabled\\">./someOtherIcon</Icon>
+            <Icon Type=\\"Normal\\">./something</Icon>
+            <Icon Type=\\"RollOver\\">./icon</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+      <DependencyList>
+        <Dependency Id=\\"MyDep\\" Version=\\"3\\"/>
+      </DependencyList>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>"
+`;
+
+exports[`buildManifestXml should build valid xml 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"no\\"?>
+<ExtensionManifest Version=\\"7.0\\" ExtensionBundleId=\\"de.nerixyz.build\\" ExtensionBundleVersion=\\"1.0.0\\">
+  <ExtensionList>
+    <Extension Id=\\"de.nerixyz.build.test\\" Version=\\"2.0.1\\"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name=\\"AEFT\\" Version=\\"14\\"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code=\\"All\\"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name=\\"CSXS\\" Version=\\"4.0\\"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id=\\"de.nerixyz.build.test\\">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./index.html#root</MainPath>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>My Menu Item</Menu>
+          <Geometry>
+            <Size>
+              <Height>150</Height>
+              <Width>200</Width>
+            </Size>
+            <MinSize>
+              <Height>100</Height>
+              <Width>100</Width>
+            </MinSize>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>"
+`;

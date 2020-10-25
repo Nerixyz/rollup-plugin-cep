@@ -1,0 +1,8 @@
+{
+  "name": "e2e",
+  "private": true,
+  "dependencies": {
+    "rollup": "^2.32.1",
+    "rollup-plugin-cep": "file:../"
+  }
+}

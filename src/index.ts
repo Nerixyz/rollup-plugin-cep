@@ -4,6 +4,8 @@ import { Options } from './types';
 import { buildDebugXml, buildManifestXml } from './build-xml';
 import { importConfig } from './utilities';
 
+export * from './types';
+
 export default function cep(input?: Partial<Options>): Plugin {
   const options: Options = {
     configPath: 'cep.config.js',
